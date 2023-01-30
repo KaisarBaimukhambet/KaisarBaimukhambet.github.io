@@ -1,1 +1,0 @@
-# KaisarBaimukhambet.github.io

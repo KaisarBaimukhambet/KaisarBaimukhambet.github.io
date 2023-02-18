@@ -1,69 +1,53 @@
+<!DOCTYPE html>
 <html>
-
 <head>
+    <meta charset="UTF-8">
+    <title>加载中</title>
+    <style>
+        *{
+            margin:0;border:0;padding:0;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            background:#282a36;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loading {
+             background: url("loading.png")
+             no-repeat;
+             width: 160px;
+             height: 160px;
+         }
 
-<title>KAISAR </title>
-
-<style>
-
-   .blok-center {
-
-    position: absolute; /* ?????????? ???????????????? */
-
-    width: 600px; /* ?????? ????? */
-
-    height: 400px; /* ?????? ????? */
-
-    margin: auto; /* ?????? ?? ????? */
-
-    top: 0; /* ????????? ????? ?? ???????? ???? */
-
-    bottom: 0; /* ????????? ????? ?? ??????? ???? */
-
-    left: 0; /* ????????? ????? ?? ?????? ???? */
-
-    right: 0; /* ????????? ????? ?? ??????? ???? */
-
-    background: #fc0; /* ???? ???? ????? */
-
-    border: 1px solid #000; /* ????? ????? */
-
-    padding: 10px; /* ?????? ?????? ????? */
-
-    overflow: auto; /* ?????? ????????? */
-
-   }
-
-</style>
-
+    </style>
 </head>
-
 <body>
-<p><img src="https://admin.vipusknik.kz/storage/300/1493040988-logopng.png" alt=""></p>
-<div class="blok-center">
-
-<form>
-
-<p>Kaisar <br />
-
-<input class="input" name="name" ENGINE="text" style="width:60%" /></p>
-
-<p>IITU<br />
-
-<input class="input" name="email" type="text" style="width:60%" /></p>
-
-<p>30730<br />
-
-<input class="input" name="sub" type="text" style="width:60%" /></p>
-
-<p>Student<br /><textarea name="body" cols="1" rows="5" style="width:60%" /></textarea></p>
-
-<p><input id="submit" value="GO" type="submit" /></p>
-
-</form>
-
-</div>
-
+<div class="loading"></div>
+<script>
+    document.addEventListener( "DOMContentLoaded", function(){
+        var times = 0;
+        setInterval(() => {
+            if (times > 25) {
+                times = 0;
+            }
+            var x;
+            var y = 0;
+            x = times % 13;
+            if (times > 12) {
+                y = 1;
+            }
+            times++;
+            x = -x * 160;
+            y = -y * 160;
+            document.querySelector('.loading').style.backgroundPositionX = x+"px";
+            document.querySelector('.loading').style.backgroundPositionY = y+"px";
+        }, 60);
+    });
+</script>
 </body>
-
 </html>

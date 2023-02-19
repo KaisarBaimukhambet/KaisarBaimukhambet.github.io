@@ -3,7 +3,7 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font size: 32px;
 	line-height:1.6;
-	color:blue;
+	color:#333;
 }
 
 *,
@@ -31,10 +31,35 @@ h1,h2,h3,h4,h5,h6{
  .intro{
  	width:100%;
  	height:100vh;
- 	background:url("https://wallpapercave.com/wp/wp7101442.jpg") center no-repeat ;
+   
+ 	filter: alpha(opacity=40);
+   background:url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5eeea355389655.59822ff824b72.gif") center no-repeat ;
  	
+   -webkit-background-size:cover;
  	background-size: cover;
 
 
 
  }
+.button {
+      background-color: ;
+      -webkit-border-radius: 60px;
+      border-radius: 60px;
+      border: none;
+      color: #eeeeee;
+      cursor: pointer;
+      display: inline-block;
+      font-family: sans-serif; 
+      font-size: 20px;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      }
+      @keyframes glowing {
+      0% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+      50% { background-color: #49e819; box-shadow: 0 0 20px #49e819; }
+      100% { background-color: #2ba805; box-shadow: 0 0 5px #2ba805; }
+      }
+      .button {
+      animation: glowing 1300ms infinite;
+      }

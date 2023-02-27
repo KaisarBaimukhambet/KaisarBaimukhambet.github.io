@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
-
 *{
   margin: 0;
   padding: 0;
@@ -8,14 +7,14 @@
 
 body{
   font-family: 'Comfortaa', cursive;
-  background-color: black;
+  background-color: red;
   color: white;
   overflow-x: hidden;
 }
 
 .container{
   width: 1280px;
-  margin: auto;
+  margin: 0;
 }
 
 header{border-bottom: 5px solid orange;}
@@ -66,7 +65,7 @@ input:focus{
   transition: 1s;
 }
 
-#search_box i:hover{color: orange;}
+#search_box i:hover{color: blue;}
 
 #grid{
   width: 100%;

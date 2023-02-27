@@ -31,7 +31,6 @@ apiRequest = () => {
 
   fetch(url)
 
-  
   .then(response => {
     if (!response.ok) throw Error(response.statusText);
       return response.json();
@@ -46,6 +45,8 @@ apiRequest = () => {
 
 loadImages = (data) => {
   for(let i = 0;i < data.results.length;i++){
+  let screen= document.createElement("div");
+  let histury=document.createElement("div");
     let image = document.createElement("div");
     image.className = "img";
     image.style.backgroundImage = "url("+data.results[i].urls.raw + "&w=1366&h=768" +")";
@@ -55,3 +56,4 @@ loadImages = (data) => {
     document.querySelector("#grid").appendChild(image);
   }
 }
+

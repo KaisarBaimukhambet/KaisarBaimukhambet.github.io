@@ -1,0 +1,41 @@
+body {
+  background-color:white;
+  font-family:arial;
+  line-height:1.5;
+}
+
+.title {
+	margin:0px;
+	padding:0px;
+	width:960px;
+}
+.title li{
+	 float:left;
+	 display:inline-block;
+}
+.title li a{
+	 float:left;
+     font-family:Apolline;
+	 font-size:22px;
+	 color:#372800;
+	 text-align:center;
+	 line-height:30px;
+	 text-decoration:none;
+	 background:#f6b60d;
+	 padding-left:12px;
+	 padding-right:12px;
+	 margin-top:5px;
+	 border-right:1px dotted #FFFFFF;
+}
+
+h1{
+font-size:15px;
+}
+h2{
+font-size:35px;
+}
+          
+
+ur{
+  background-color:#ccc;
+}

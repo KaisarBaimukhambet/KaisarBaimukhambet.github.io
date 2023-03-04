@@ -1,6 +1,6 @@
 body {
-  background-color:white;
-  font-family:arial;
+  background-color: white ;
+  font-family:Antonia Variable;
   line-height:1.5;
 }
 
@@ -28,6 +28,12 @@ body {
 	 border-right:1px dotted #FFFFFF;
 }
 
+.text{
+font-size:22px;
+  background-color:#f6b60d  ;
+}
+
+
 h1{
 font-size:15px;
 }
@@ -36,6 +42,6 @@ font-size:35px;
 }
           
 
-ur{
-  background-color:#ccc;
-}
+
+
+

@@ -1,2 +1,2 @@
 # My project name: kaisarbaimukhambet.github.io
-### The link to Figma: https://www.figma.com/file/ZZ1k60MWM6sYtQSygKyXiy/kaisarbaimukhambet.github.io?node-id=1%3A2&t=NYokMUJOfLe4yPDD-1
+### The link to Figma:https://www.figma.com/file/QnZrITVfIpfXuaSBjfg1nY/KaisarZhandos.io?node-id=0%3A1&t=Jrno23JquuUWFEoN-1

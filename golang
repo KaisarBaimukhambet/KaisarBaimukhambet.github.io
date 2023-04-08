@@ -1,0 +1,39 @@
+package main
+
+import (
+    "fmt"
+)
+
+func calculateAverage(numbers []int) float64 {
+    if len(numbers) == 0 {
+        return 0
+    }
+    total := 0
+    for _, num := range numbers {
+        total += num
+    }
+    return float64(total) / float64(len(numbers))
+}
+
+
+
+
+
+func main() {
+    var n int
+    fmt.Println("Enter the size of the array:")
+    fmt.Scanln(&n)
+
+    arr := make([]int, n)
+    fmt.Println("Enter", n, "integers:")
+    for i := 0; i < n; i++ {
+        fmt.Scanln(&arr[i])
+    }
+
+    fmt.Println("The array is:", arr)
+     avg := calculateAverage(arr)
+    fmt.Printf("The average is: %f\n", avg)
+ 
+}
+
+

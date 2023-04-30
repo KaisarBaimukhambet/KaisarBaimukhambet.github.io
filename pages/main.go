@@ -33,7 +33,7 @@ func main() {
 
     // Register the form submission handler
     http.HandleFunc("/", handleFormSubmission)
-
+tmpl := template.Must(template.ParseFiles("index.html"))
     // Start the server
     log.Fatal(http.ListenAndServe(":8080", nil))
 }

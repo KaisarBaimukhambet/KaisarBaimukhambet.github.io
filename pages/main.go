@@ -2,6 +2,7 @@ package main
 
 import (
     "database/sql"
+    "html/template"
     "fmt"
     "log"
     "net/http"
